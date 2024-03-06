@@ -1,6 +1,6 @@
 public class AccountTest {
     public static void main(String[] args) {
-        Account myAccount = new Account("1234", 10000.0);
+        Account myAccount = new Account("2024", 1000000.0);
         
         myAccount.activate();
         myAccount.suspend();
