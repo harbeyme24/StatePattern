@@ -1,6 +1,6 @@
 # StatePattern
 
-# Problem Scenario
+# 1. Problem Scenario
 A bank needs to manage different states of customer accounts, including active, suspended, and closed. Each state has specific rules and restrictions regarding allowed operations, and accounts have associated attributes like account number and balance.
 Active accounts: Allow deposits and withdrawals.
 Suspended accounts: Disallow deposits and withdrawals transactions, but allow viewing account information.
@@ -85,9 +85,11 @@ public class AccountTest {
 }
 
 
+# 2. UML Diagram
+<img width="1463" alt="Screenshot 2024-03-07 at 12 42 55 AM" src="https://github.com/harbeyme24/StatePattern/assets/143273418/5aed7214-220d-43a8-80db-4164bab82246">
 
 
-# Java Source Codes Solution
+# 3. Java Source Codes Solution
 
 <img width="2560" alt="Screenshot 2024-03-07 at 12 19 18 AM" src="https://github.com/harbeyme24/StatePattern/assets/143273418/c88d1000-885f-4004-af32-1452dd21e5b3">
 
