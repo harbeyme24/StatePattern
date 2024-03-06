@@ -47,40 +47,48 @@ Note:  No if-else, switch will be used
 
 Create AccountTest() class to test the Account:
 
-public class AccountTest(){
-	public static void main (String[] args){
+public class AccountTest {
+    public static void main(String[] args) {
+        Account myAccount = new Account("1234", 10000.0);
 
-		Account myAccount = new Account("1234", 10000.0); //set acct to active state
-                       myAccount.activate(); // displays "Account is already activated!"
+        myAccount.activate(); // displays "Account is already activated!"
 
-                       //Suspend the account
-		myAccount.suspend(); //displays "Account is suspended!"
+        // Suspend the account
+        myAccount.suspend(); // displays "Account is suspended!"
 
-		//Activate the account
-                        myAccount.activate() //displays "Account is activated!"
-		
-		//Deposit to the account
-	myAccount.deposit(1000.0);// update balance and displays account number and
-         // current balance. Call the toString() method in deposit().    	                                
+        // Activate the account
+        myAccount.activate(); // displays "Account is activated!"
 
-//Withdraw to the account
-	myAccount.withdraw(100.0);// update balance and displays account number and
-         // current balance. Call the toString() method in withdraw().    	                                
+        // Deposit to the account
+        myAccount.deposit(1000.0); // updates balance and displays account number and current balance
 
-		//Close the account()
-		myAccount.close()  //displays "Account is closed!"
+        // Withdraw from the account
+        myAccount.withdraw(100.0); // updates balance and displays account number and current balance
 
-		//Activate the account
-		myAccount.activate() // Displays "You cannot activate a closed account!"	
+        // Close the account
+        myAccount.close(); // displays "Account is closed!"
 
-		//Suspend the account
-		my.Account.activate() // Displays " You cannot suspend a closed account!"
+        // Activate the account
+        myAccount.activate(); // displays "You cannot activate a closed account!"
 
+        // Suspend the account
+        myAccount.suspend(); // displays "You cannot suspend a closed account!"
 
-		//Withdraw to the account
-myAccount.withdraw(500.0);// Show message "You cannot withdraw on a closed                   account!". Call the toString() to show current balance and account number.
+        // Withdraw from the account
+        myAccount.withdraw(500.0); // shows message "You cannot withdraw on a closed account!"
+                                   // Call the toString() to show current balance and account number.
 
-		//Deposit to the account
-myAccount.deposit(1000.0);// Show message "You cannot deposit on closed                  //account!". Call the toString() to show current balance and account number.
+        // Deposit to the account
+        myAccount.deposit(1000.0); // shows message "You cannot deposit on a closed account!"
+                                   // Call the toString() to show current balance and account number.
+    }
 }
+
+
+
+
+# Java Source Codes Solution
+
+<img width="2560" alt="Screenshot 2024-03-07 at 12 19 18 AM" src="https://github.com/harbeyme24/StatePattern/assets/143273418/c88d1000-885f-4004-af32-1452dd21e5b3">
+
 }
